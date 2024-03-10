@@ -1,4 +1,30 @@
-.game-area {
+body {
+    background-color: rgb(255, 136, 0);
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.subjects {
+    margin: auto;
+    width: 100%;
+    height: 50vh;
+}
+
+.subject-area {
+    font-family: cursive;
+    background-color: rgb(255, 105, 5);
+    padding: 50px;
+    margin: auto 20px;
+    position: relative;
+    top: 25%;
+    text-align: center;
+    border: 5px solid rgb(255, 63, 5);
+    border-radius:  20px;
+}
+/*.game-area {
     sd
 }
 
@@ -12,4 +38,16 @@
 
 .question-area {
     sd
+}
+*/
+
+/* Start of media queries */
+
+@media only screen and (max-width: 600px) {
+    .subject-area {
+        display: block;
+        margin: 10px 30px;
+        padding: 40px 30px;
+        top: 10%;
+    }
 }

@@ -72,6 +72,22 @@ body {
     background-color: rgb(220,53,69);
 }
 
+/* Scoreboard styling */
+
+#scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.scores {
+    text-align: center;
+}
+
+.score-area {
+    asd
+}
+
+
 /*.game-area {
     sd
 }
@@ -80,9 +96,6 @@ body {
     sda
 }
 
-.score-area {
-    asd
-}
 
 
 */

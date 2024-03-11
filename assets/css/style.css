@@ -45,7 +45,6 @@ body {
 
 .choice-container:hover{
     cursor: pointer;
-    background-color:  rgb(255, 119, 28);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }

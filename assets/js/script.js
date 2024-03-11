@@ -1,5 +1,5 @@
-const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice-text"));
+let question = document.getElementById("question");
+let choices = Array.from(document.getElementsByClassName("choice-text"));
 
 let currentQuestion = {};
 let score=0;
@@ -33,8 +33,8 @@ let questions = [
     }
 ];
 
-const correct_value = 1;
-const total_question = 3;
+let correct_value = 1;
+let total_question = 3;
 
 startQuiz = () => {
     questionCounter = 0;
@@ -45,16 +45,16 @@ startQuiz = () => {
 }
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 ) {
+    if(availableQuestions.length === 0 || questionCounter >= total_question ) {
         return window.location.assign("/end.html")
     }
     questionCounter++;
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length)
+    let questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
     choices.forEach( choice => {
-        const number = choice.dataset["number"];
+        let number = choice.dataset["number"];
         choice.innerText = currentQuestion["choice" + number];
     });
     
@@ -67,10 +67,22 @@ choices.forEach(choice => {
         if(acceptingAnswers === false) return;
 
         acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset["number"];
-        getNewQuestion();
-    })
-})
+        let selectedChoice = e.target;
+        let selectedAnswer = selectedChoice.dataset["number"];
+
+        let classToApply = "";
+        if(selectedAnswer == currentQuestion.answer) {
+            classToApply = "correct";
+        } else {
+            classToApply = "incorrect"
+        }
+        selectedChoice.parentElement.classList.add(classToApply);
+        setTimeout ( () => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
+        
+    });
+});
 
 startQuiz();

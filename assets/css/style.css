@@ -83,12 +83,24 @@ body {
     text-align: center;
 }
 
-.score-area {
-    asd
+#progressBar {
+    width: 320px;
+    height: 64px;
+    border: 5px solid rgb(255, 63, 5)
+}
+
+#progressBarFull {
+    height: 64px;
+    background-color: rgba(255, 63, 5, 0.568);
+    width: 0%;
+}
+
+/*.score-area {
+    
 }
 
 
-/*.game-area {
+.game-area {
     sd
 }
 

@@ -1,6 +1,9 @@
 let question = document.getElementById("question");
 let choices = Array.from(document.getElementsByClassName("choice-text"));
-
+let progressText = document.getElementById("progressText");
+let scoreText = document.getElementById("score");
+let progressBarFull = document.getElementById("progressBarFull");
+let acceptingAnswers = false;
 let currentQuestion = {};
 let score=0;
 let questionCounter = 0;
@@ -46,10 +49,15 @@ startQuiz = () => {
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= total_question ) {
-        return window.location.assign("/end.html")
+        return window.location.assign("/end.html");
     }
     questionCounter++;
-    let questionIndex = Math.floor(Math.random() * availableQuestions.length)
+    progressText.innerText = "Questions completed: " + (questionCounter-1) + "/" + total_question;
+
+    //Increase progress bar
+    progressBarFull.style.width = `${((questionCounter -1 ) * 100/ total_question)}%`;
+
+    let questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
@@ -76,13 +84,24 @@ choices.forEach(choice => {
         } else {
             classToApply = "incorrect"
         }
+
+        if(classToApply ==='correct') {
+            total_score(correct_value);
+        }
+
+
         selectedChoice.parentElement.classList.add(classToApply);
         setTimeout ( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 1000);
+        }, 200);
         
     });
 });
+
+total_score = num => {
+    score += num ;
+    scoreText.innerText= score;
+}
 
 startQuiz();

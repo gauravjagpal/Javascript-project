@@ -11,28 +11,28 @@ let availableQuestions =[];
 
 let questions = [
     {
-      "question": "What's 1+1",
+      "question": "How many wives did Henry VIII have?",
       "choice1": "2",
       "choice2": "5",
       "choice3": "1",
-      "choice4": "3",
+      "choice4": "6",
+      "answer": 4
+    },
+    {
+      "question": "When did the first world war end?",
+      "choice1": "1914",
+      "choice2": "1928",
+      "choice3": "1901",
+      "choice4": "1066",
       "answer": 1
     },
     {
-      "question": "How many degrees between 2 perpendicular lines?",
-      "choice1": "90",
-      "choice2": "45",
-      "choice3": "They do not intersect",
-      "choice4": "180",
-      "answer": 1
-    },
-    {
-      "question": "Solve 2𝒙 - 1 = 13",
-      "choice1": "x = 7.5",
-      "choice2": "x = 6",
-      "choice3": "x = 7",
-      "choice4": "x = 6.5",
-      "answer": 3
+      "question": "When did Thomas Edison invent the light bulb?",
+      "choice1": "1066",
+      "choice2": "1879",
+      "choice3": "1923",
+      "choice4": "1615",
+      "answer": 2
     }
 ];
 

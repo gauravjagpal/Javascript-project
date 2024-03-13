@@ -51,7 +51,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= total_question ) {
         localStorage.setItem('mostRecentScore', score);
         //Go to end page
-        return window.location.assign("/end.html");
+        return window.location.assign("end.html");
     }
     questionCounter++;
     progressText.innerText = "Questions completed: " + (questionCounter-1) + "/" + total_question;

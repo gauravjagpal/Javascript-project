@@ -11,12 +11,12 @@ let availableQuestions =[];
 
 let questions = [
     {
-      "question": "What's 1+1",
-      "choice1": "2",
-      "choice2": "5",
-      "choice3": "1",
-      "choice4": "3",
-      "answer": 1
+      "question": "A train travels at 120mph. How far does it travel in 45 minutes",
+      "choice1": "30 miles",
+      "choice2": "90 miles",
+      "choice3": "60 miles",
+      "choice4": "45 miles",
+      "answer": 2
     },
     {
       "question": "How many degrees between 2 perpendicular lines?",

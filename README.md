@@ -1,39 +1,96 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Page Logo](assets\images\logo.jpeg)
 
-Welcome,
+Welcome to [The GCSE Quiz!](https://gauravjagpal.github.io/Javascript-project/)!
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This app has been designed to help students through their GCSE's.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+Within this app, you can select a topic and complete a quiz to test your knowledge.
 
-## Codeanywhere Reminders
+### Technologies used
+HTML5, CSS, JavaScript
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## CONTENTS
+* [Code Structure](#code-structure)
+    - HTML Files
+    - Assets Folder
+    - README File
+    - Media Folder
 
-`python3 -m http.server`
+* [User Experience (UX)](#user-experience-ux)
+    - User Stories
+        - Visitor Goals
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* [Design](#design)
+    - Colour Scheme
+    - Background Colours
+    - Button Colours
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+* [Wireframes](#wireframes)
+    - Home page
+    - About me page
+    - Vagus Nerve page
 
-`http_server`
+* [Features](#features)
+    - Favicon
+    - Navbar
+    - Landing Page
+    - Features left to implement
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* [Testing](#testing)
+    - Validator Testing
+        - W3C validator
+        - Jigsaw Validator
+    
+    - Lighthouse Testing
+        - Index page
+        - About page
+        - Vagus Nerve page
+        - Submission Page
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+    - Unfixed Bugs
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* [Deployment](#deployment)
 
-To log into the Heroku toolbelt CLI:
+* [Credits](#credits)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Code Structure
+### HTML files
+I have stored all of my HTML5 files at the directory level
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Assets folder
+All files complimenting my HTML have been included in the assets folder. Broken down by:
+- css
+- images
+- js
 
----
+### README file
+The README file is also at directory level and the assosciated files are stored in a "media" folder
 
-Happy coding!
+### Media Folder
+The Media folder contains all of the images used in the README file
+
+## User Experience (UX)
+
+### User Stories
+
+#### Visitor Goals
+- A place to test knowledge gained in preparation for exams 
+- Test themselves on different subjects
+
+## Design
+### Colour Scheme
+I decided to use orange colours as they are bright and could help keep the user engaged. Throughout the whole app there are different shades of orange.
+
+#### Colours used:
+- color1: rgb(255, 136, 0)
+- color2: rgb(255, 63, 5)
+- color3: rgb(255, 105, 5)
+- color4: rgb(255, 90, 5)
+- color5: rgb(255, 119, 28)
+- progress: rgba(255, 63, 5, 0.568) *(used for the progress bar)* 
+- correct: rgb(39,161,67) *(used for the correct answer)*
+- incorrect: rgb(220,53,69) *(used for the incorrect answer)*
+
+## Wireframes
+### Home page
+![Home Page Wireframe](media/index-wireframe.png)

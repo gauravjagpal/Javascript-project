@@ -1,9 +1,18 @@
 :root {
     color: rgb(255, 4, 5);
+    --color1: rgb(255, 136, 0);
+    --color2: rgb(255, 63, 5);
+    --color3: rgb(255, 105, 5);
+    --color4: rgb(255, 90, 5);
+    --color5: rgb(255, 119, 28);
+    --progress: rgba(255, 63, 5, 0.568);
+    --correct: rgb(39,161,67);
+    --incorrect: rgb(220,53,69);
+
 }
 
 body {
-    background-color: rgb(255, 136, 0);
+    background-color: var(--color1);
     text-align: center;
 }
 .container {
@@ -48,18 +57,18 @@ p {
 }
 
 .subject-area {
-    background-color: rgb(255, 105, 5);
+    background-color: var(--color3);
     padding: 50px;
     margin: auto 20px;
     position: relative;
     top: 25%;
     text-align: center;
-    border: 5px solid rgb(255, 63, 5);
+    border: 5px solid var(--color2);
     border-radius:  20px;
 }
 
 .subject-area:hover {
-    background-color: rgb(255, 90, 5);
+    background-color: var(--color4);
 }
 
 
@@ -72,7 +81,7 @@ p {
     margin:0 auto 8px;
     width: 80%;
     font-size: 28px;
-    border: 0.1rem solid rgb(255, 63, 5);
+    border: 0.1rem solid var(--color2);
     background-color: white;
 }
 
@@ -83,12 +92,12 @@ p {
 }
 
 .choice-container:active {
-    background-color: rgb(255, 119, 28);;
+    background-color: var(--color5);
   }
 
 .choice-prefix {
     padding: 24px 40px;
-    background-color: rgb(255, 105, 5);
+    background-color: var(--color3);
     color: white;
     margin: 0;
 }
@@ -98,11 +107,11 @@ p {
 }
 
 .correct {
-    background-color:rgb(39,161,67);
+    background-color: var(--correct);
 }
 
 .incorrect {
-    background-color: rgb(220,53,69);
+    background-color: var(--incorrect);
 }
 
 /* Scoreboard styling */
@@ -119,12 +128,12 @@ p {
 #progressBar {
     width: 320px;
     height: 64px;
-    border: 5px solid rgb(255, 63, 5)
+    border: 5px solid var(--color2)
 }
 
 #progressBarFull {
     height: 64px;
-    background-color: rgba(255, 63, 5, 0.568);
+    background-color: var(--progress);
     width: 0%;
 }
 
@@ -152,18 +161,18 @@ p {
 }
 
 #return {
-    background-color: rgb(255, 105, 5);
+    background-color: var(--color3);
     padding: 20px 30px;
     margin: auto 20px;
     position: relative;
     top: 0%;
     text-align: center;
-    border: 5px solid rgb(255, 63, 5);
+    border: 5px solid var(--color2);
     border-radius:  20px;
 }
 
 #return:hover {
-    background-color: rgb(255, 90, 5);
+    background-color: var(--color4);
 }
 
 /* Start of media queries */

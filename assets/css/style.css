@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     padding: 2rem;
   }
-/*font-sizes*/
+/*font*/
 p {
     color: black;
 }
@@ -33,6 +33,12 @@ p {
 .logo {
     width: 100%;
     max-height: 50vh;
+}
+
+.subjects a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 .subjects {
@@ -169,6 +175,63 @@ p {
         padding: 40px 30px;
         top: 10%;
     }
+}
+
+@media only screen and (max-width: 800px) {
+    .choice-container {
+        font-size: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .subjects a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    #question {
+        font-size: 20px;
+    }
+
+    .choice-container {
+        font-size: 16px;
+    }
+
+    .choice-prefix {
+        padding: 12px 20px;
+    }
+
+    .score-area h1, .score-area h2 {
+        font-size: 20px;
+    }
+
+    #progressBar {
+        height: 23px;
+        width: 100%;
+    }
+
+    #progressBarFull {
+        height: 23px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .choice-container {
+        font-size: 12px;
+    }
+
+    .score-area h1, .score-area h2 {
+        font-size: 14px;
+    }
+
+    #progressBar {
+        width: 95%;
+    }
+
 }
 
 @media only screen and (min-width: 660px) {

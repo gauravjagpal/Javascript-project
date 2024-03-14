@@ -36,8 +36,8 @@ let questions = [
     }
 ];
 
-let correct_value = 1;
-let total_question = 3;
+let correctValue= 1;
+let totalQuestion = 3;
 
 startQuiz = () => {
     questionCounter = 0;
@@ -48,16 +48,16 @@ startQuiz = () => {
 }
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter >= total_question ) {
+    if(availableQuestions.length === 0 || questionCounter >= totalQuestion ) {
         localStorage.setItem('mostRecentScore', score);
         //Go to end page
         return window.location.assign("end.html");
     }
     questionCounter++;
-    progressText.innerText = "Questions completed: " + (questionCounter-1) + "/" + total_question;
+    progressText.innerText = "Questions completed: " + (questionCounter-1) + "/" + totalQuestion;
 
     //Increase progress bar
-    progressBarFull.style.width = `${((questionCounter -1 ) * 100/ total_question)}%`;
+    progressBarFull.style.width = `${((questionCounter -1 ) * 100/ totalQuestion)}%`;
 
     let questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -88,7 +88,7 @@ choices.forEach(choice => {
         }
 
         if(classToApply ==='correct') {
-            total_score(correct_value);
+            totalScore(correctValue);
         }
 
 
@@ -101,7 +101,7 @@ choices.forEach(choice => {
     });
 });
 
-total_score = num => {
+totalScore = num => {
     score += num ;
     scoreText.innerText= score;
 }

@@ -147,3 +147,13 @@ The html files have been run through the <a href="https://validator.w3.org/#vali
 #### Jigsaw validator
 The CSS files have been run through the <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">Jigsaw </a>validator and the below are the current status:
 - [style.css](assets/css/style.css) - pass - No error found
+
+#### JSint validator
+
+### Lighthouse testing
+ - Index page
+    - Desktop Testing:
+    ![Home Desktop Testing](media/home-lighthouse.jpg)
+    
+    - Mobile Testing:
+    ![Home Mobile Testing](media/home-mobile-lighthouse.jpg)

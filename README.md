@@ -93,4 +93,49 @@ I decided to use orange colours as they are bright and could help keep the user 
 
 ## Wireframes
 ### Home page
-![Home Page Wireframe](media/index-wireframe.png)
+![Home Page Wireframe](media/home-wireframe.jpg)
+
+### Quiz page
+![Quiz Page Wireframe](media/quiz-wireframe.jpg)
+
+### End page
+![End Page Wireframe](media/end-wireframe.jpg)
+
+## Features
+This app has 3 views:
+- A home page - A page to navigate towards different quizzes
+- Quiz pages - The place the user can complete different quizzes
+- End page - The checkout page where the user can see there score and return to the home page
+
+### Landing Page
+
+The landing page is an easy to use page. Minimal information keeping it clear for the user to navigate.
+
+![Home Page](media/home-screen-responsive.jpg)
+
+
+### Quiz page
+
+After selecting the topic, you will be directed to one of the quizzes.
+
+Maths:
+
+![Maths Quiz](media/maths-screen-responsive.jpg)
+
+Physics:
+
+![Physics Quiz](media/physics-screen-responsive.jpg)
+
+History:
+
+![History Quiz](media/history-screen-responsive.jpg)
+
+### Features left to implement
+- Replace the subject buttons with level buttons
+- Place more subjects withing each level
+
+## Testing
+### Validator testing
+#### W3C validator
+The html files have been run through the <a href="https://validator.w3.org/#validate_by_input"> W3C </a>validator and the below are the current status:
+- [index.html](index.html) - pass - No errors or warnings

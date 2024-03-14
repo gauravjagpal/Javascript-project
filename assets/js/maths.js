@@ -113,4 +113,3 @@ startQuiz();
 const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 console.log(total_question);
-finalScore.innerText = mostRecentScore/total_question;

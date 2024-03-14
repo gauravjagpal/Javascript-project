@@ -144,3 +144,6 @@ The html files have been run through the <a href="https://validator.w3.org/#vali
 - [history.html](index.html) - pass - No errors or warnings
 - [end.html](index.html) - pass - No errors or warnings
 
+#### Jigsaw validator
+The CSS files have been run through the <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">Jigsaw </a>validator and the below are the current status:
+- [style.css](assets/css/style.css) - pass - No error found

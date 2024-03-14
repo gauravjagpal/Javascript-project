@@ -139,3 +139,8 @@ History:
 #### W3C validator
 The html files have been run through the <a href="https://validator.w3.org/#validate_by_input"> W3C </a>validator and the below are the current status:
 - [index.html](index.html) - pass - No errors or warnings
+- [maths.html](index.html) - pass - No errors or warnings
+- [physics.html](index.html) - pass - No errors or warnings
+- [history.html](index.html) - pass - No errors or warnings
+- [end.html](index.html) - pass - No errors or warnings
+

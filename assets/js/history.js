@@ -42,10 +42,10 @@ let totalQuestion = 3;
 startQuiz = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions]
+    availableQuestions = [...questions];
     console.log(availableQuestions);
     getNewQuestion();
-}
+};
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= totalQuestion ) {
@@ -84,7 +84,7 @@ choices.forEach(choice => {
         if(selectedAnswer == currentQuestion.answer) {
             classToApply = "correct";
         } else {
-            classToApply = "incorrect"
+            classToApply = "incorrect";
         }
 
         if(classToApply ==='correct') {
@@ -104,7 +104,7 @@ choices.forEach(choice => {
 totalScore = num => {
     score += num ;
     scoreText.innerText= score;
-}
+};
 
 startQuiz();
 

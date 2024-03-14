@@ -44,10 +44,16 @@ p {
     max-height: 50vh;
 }
 
-.subjects a, #return {
+.subjects a {
     color: white;
     text-decoration: none;
     font-size: 30px;
+}
+
+#return {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .subjects {

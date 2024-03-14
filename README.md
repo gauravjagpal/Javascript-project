@@ -27,12 +27,13 @@ HTML5, CSS, JavaScript
 
 * [Wireframes](#wireframes)
     - Home page
-    - About me page
-    - Vagus Nerve page
+    - Quiz pages
+        - Maths
+        - Physics
+        - History
+    - End page
 
 * [Features](#features)
-    - Favicon
-    - Navbar
     - Landing Page
     - Features left to implement
 
@@ -40,12 +41,14 @@ HTML5, CSS, JavaScript
     - Validator Testing
         - W3C validator
         - Jigsaw Validator
+        - JSHint
     
     - Lighthouse Testing
-        - Index page
-        - About page
-        - Vagus Nerve page
-        - Submission Page
+        - Home page
+        - Maths page
+        - Physics page
+        - History page
+        - End page
 
     - Unfixed Bugs
 
@@ -148,12 +151,86 @@ The html files have been run through the <a href="https://validator.w3.org/#vali
 The CSS files have been run through the <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">Jigsaw </a>validator and the below are the current status:
 - [style.css](assets/css/style.css) - pass - No error found
 
-#### JSint validator
+#### JSHint validator
+
+The code has been passed through the JSHint validator and had 0 error, 32 warnings:
+![JSHint pic 1](media/JSHint-1.jpg) ![JSHint pic 2](media/JSHint-2.jpg)
 
 ### Lighthouse testing
- - Index page
-    - Desktop Testing:
-    ![Home Desktop Testing](media/home-lighthouse.jpg)
+#### Index page
+    - Desktop Testing, the following shows the results from desktop testing the home page. With a score of 100 on performance:
+![Home Desktop Testing](media/home-lighthouse.jpg)
     
     - Mobile Testing:
-    ![Home Mobile Testing](media/home-mobile-lighthouse.jpg)
+![Home Mobile Testing](media/home-mobile-lighthouse.jpg)
+
+
+#### Maths page
+    - Desktop Testing, the following shows the results from desktop testing the home page. With a score of 100 on performance:
+![Maths Desktop Testing](media/maths-lighthouse.jpg)
+    
+    - Mobile Testing:
+![Maths Mobile Testing](media/maths-mobile-lighthouse.jpg)
+
+
+#### Physics page
+    - Desktop Testing, the following shows the results from desktop testing the home page. With a score of 100 on performance:
+![Physics Desktop Testing](media/physics-lighthouse.jpg)
+    
+    - Mobile Testing:
+![Physics Mobile Testing](media/physics-mobile-lighthouse.jpg)
+
+#### History page
+    - Desktop Testing, the following shows the results from desktop testing the home page. With a score of 100 on performance:
+![History Desktop Testing](media/history-lighthouse.jpg)
+    
+    - Mobile Testing:
+![History Mobile Testing](media/history-mobile-lighthouse.jpg)
+
+#### End page
+    - Desktop Testing, the following shows the results from desktop testing the home page. With a score of 100 on performance:
+![End Desktop Testing](media/end-lighthouse.jpg)
+    
+    - Mobile Testing:
+![End Mobile Testing](media/end-mobile-lighthouse.jpg)
+
+### Bugs
+- The end page was not loadign. I realised I was using absolute paths for images and changed this to relative paths.
+
+### Unfixed Bugs
+As of yet, I have not found any further bugs which still need fixing.
+
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using GitHub Pages - [GCSE QUIZ](https://gauravjagpal.github.io/Javascript-project/).
+
+1. Login (or signup) to Github.
+2. Go to my repository for the project, [gauravjagpal/Javascript-project](https://github.com/gauravjagpal/Javascript-project).
+3. Click the settings button in the banner near the top of the screen.
+4. On the menu on the left hand side, select "Pages".
+5. From the Branch dropdown select main branch and press save.
+6. The site has now been deployed (this may take a few minutes to action).
+
+#### How to Fork
+
+To fork the repository:
+
+1. Login (or signup) to Github.
+2. Go to my repository for the project, [gauravjagpal/Javascript-project](https://github.com/gauravjagpal/Javascript-project).
+3. Click the Fork button in the top right corner.
+
+To clone the repository:
+
+1. Login (or signup) to Github.
+2. Go to my repository for the project, [gauravjagpal/Javascript-project](https://github.com/gauravjagpal/Javascript-project).
+3. Click on the Green code button, choose whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Launch the terminal within your code editor and set the current working directory to the desired location for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+## Credits
+- Sources I used to help me build this site include: https://schoolsweek.co.uk/wp-content/uploads/2016/08/GCSE-Banner-1000x525.gif
+for the:
+
+![Page Logo](assets/images/logo.jpeg)

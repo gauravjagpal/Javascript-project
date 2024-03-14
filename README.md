@@ -1,4 +1,4 @@
-![Page Logo](assets\images\logo.jpeg)
+![Page Logo](assets/images/logo.jpeg)
 
 Welcome to [The GCSE Quiz!](https://gauravjagpal.github.io/Javascript-project/)!
 

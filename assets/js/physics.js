@@ -24,7 +24,7 @@ let questions = [
       "choice2": "v= u + at",
       "choice3": "V= I * R",
       "choice4": "a = b + c",
-      "answer": 1
+      "answer": 2
     },
     {
       "question": "Which of these speeds might be typical for a bicycle?",

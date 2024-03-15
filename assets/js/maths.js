@@ -80,6 +80,7 @@ choices.forEach(choice => {
         let selectedChoice = e.target;
         let selectedAnswer = selectedChoice.dataset["number"];
 
+        // Changes the background color of your answer depending on if the answer is correct or incorrect
         let classToApply = "";
         if(selectedAnswer == currentQuestion.answer) {
             classToApply = "correct";
@@ -96,7 +97,7 @@ choices.forEach(choice => {
         setTimeout ( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 200);
+        }, 300);
         
     });
 });

@@ -9,6 +9,8 @@ let score=0;
 let questionCounter = 0;
 let availableQuestions =[];
 
+
+// Questions for the quiz
 let questions = [
     {
       "question": "How many wives did Henry VIII have?",
@@ -47,6 +49,8 @@ startQuiz = () => {
     getNewQuestion();
 };
 
+
+// Function to get new questions
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= totalQuestion ) {
         localStorage.setItem('mostRecentScore', score);
@@ -80,6 +84,7 @@ choices.forEach(choice => {
         let selectedChoice = e.target;
         let selectedAnswer = selectedChoice.dataset["number"];
 
+        // Changes the background color of your answer depending on if the answer is correct or incorrect
         let classToApply = "";
         if(selectedAnswer == currentQuestion.answer) {
             classToApply = "correct";
@@ -96,7 +101,7 @@ choices.forEach(choice => {
         setTimeout ( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 200);
+        }, 300);
         
     });
 });

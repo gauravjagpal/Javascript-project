@@ -1,5 +1,5 @@
 :root {
-    color: rgb(255, 4, 5);
+    color: white;
     --color1: rgb(255, 136, 0);
     --color2: rgb(255, 63, 5);
     --color3: rgb(255, 105, 5);
@@ -131,6 +131,7 @@ p {
     text-align: center;
 }
 
+/* Progress Bar styling */
 #progressBar {
     width: 320px;
     height: 64px;
@@ -142,21 +143,6 @@ p {
     background-color: var(--progress);
     width: 0%;
 }
-
-/*.score-area {
-    
-}
-
-
-.game-area {
-    sd
-}
-
-.controls-area {
-    sda
-}
-
-
 
 */
 

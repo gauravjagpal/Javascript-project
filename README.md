@@ -133,6 +133,13 @@ History:
 
 ![History Quiz](media/history-screen-responsive.jpg)
 
+### End page
+
+After completing the quiz, you will be redirected to the end page which will look like below:
+End:
+
+![End Quiz](media/end-screen-responsive.jpg)
+
 ### Features left to implement
 - Replace the subject buttons with level buttons
 - Place more subjects withing each level
